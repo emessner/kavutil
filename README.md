@@ -1,14 +1,10 @@
 ## Willkommen auf der _kavutil_ Seite
 
 Hier entsteht der zentrale Sammelpunkt für unsere Python Funktionen. 
-Viel Spaß beim Baitragen, Teilen, Testen
+Viel Spaß beim Beitragen, Teilen, Testen
 
 
 
-### Jekyll Themes
+### Hier gehts zum repository
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Methodenabteilung/kavutil/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Um zu den Datein und Jupyter Notebooks zu gelangen klickt auf das [repository](https://github.com/Methodenabteilung/kavutil). Dort könnt Ihr Daten herunterladen oder "forken".
