@@ -39,3 +39,5 @@ def freq(df, var, nomiss = False):
         f = f.append(t)
 
     return f
+
+# hier ist viel Platz für Funktionen von Elisabeth und Moises
