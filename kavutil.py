@@ -59,3 +59,20 @@ def load_spssvars(var):
     df = pd.DataFrame(content, columns = labels)            
         
     return(df)
+
+def count_words(liste):
+    """ Benötigte Pakete: collections, pandas
+    Gibt die Häufigkeiten von Wörtern in einer Liste zurück. 
+    Achtung: Die Liste muss eine einfache Liste mit strings sein. Eine Liste mit Listen von strings wird nicht erkannt."""
+    
+    if any(isinstance(el, list) for el in liste) == False:
+        cnt_words = collections.Counter(liste).most_common()
+        df = pd.DataFrame(cnt_words)
+        df.columns = ["Words", "Counts"]
+        df['Percent'] = df['Counts'] / len(liste)
+    
+        return df
+    
+    else:
+        print('Your list contains several list. Use a single list with strings as input to the function')
+    
