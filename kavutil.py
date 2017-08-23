@@ -1,7 +1,8 @@
 import collections
 import pandas as pd
 import numpy as np
-import spss, spssdata
+# import spss, spssdata wird erst relevanter Funktion importiert, da dieses Paket nur unter python 3.4 funktioniert.
+# Es würde zu einer Fehlermeldung kommen, wenn man in das vorliegende Programm unter python 3.6 verwendet und diese Pakete zu nächst einlädt.
 
 def freq(df, var, nomiss = False):
     """ Erzeugt Häufigkeitstabelle ähnlich der in Stata"""
@@ -46,6 +47,8 @@ def load_spssvars(var):
     Überträgt ausgewählte Variablen aus einem SPSS Datensatz in einen pandas DataFrame. 
     Die gewünschten Variablen müssen als strings in einer Liste als Parameter in die Funktion eingegegen werden.
     Bsp: var = ["var1", "var2", ect.] """
+    
+    import spss, spssdata
 
     data = spssdata.Spssdata(var).fetchall()
         
