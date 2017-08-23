@@ -4,11 +4,9 @@ SET OLang=English Unicode=Yes Locale=German Small=0 THREADS=AUTO Printback=On BA
 Get File 'C:\...\spss_testdata.sav'.
 
 begin program python3.
-import spss, spssdata
-from load_spssvars import load_spssvars
-import pandas as pd
+import kavutil as ku
 
-x = load_spssvars(["test1", "test2", "test3"])
+x = ku.load_spssvars(["test1", "test2", "test3"])
 print(x)
 
 end program.
